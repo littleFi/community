@@ -1,0 +1,115 @@
+page{
+  background: #FFFFFF;
+}
+.container{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.column{
+  flex-direction: column;
+}
+.row{
+  flex-direction: row;
+}
+.box{
+  width: 100vw;
+  background: #FFFFFF;
+  padding: 20rpx 40rpx;
+}
+
+.publish{
+  min-height: 300rpx;
+  background: #FFFFFF;
+  border:none;
+  width: 100%;
+}
+
+.placeholder{
+  color: #aeaeae;
+  font-size: 28rpx;
+}
+
+.image-content{
+  flex-wrap: wrap;
+}
+
+.image-btn{
+  width: 200rpx;
+  height: 200rpx;
+  justify-content: center;
+  align-items: center;
+  border:4rpx solid #f3f4f8;
+  border-radius: 5rpx;
+}
+
+.camera{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.image{
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+.btn-container{
+  justify-content: center;
+  width: 100vw;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+.publish-btn{
+  background: #ABDA72;
+  color:#FFFFFF;
+  width: 500rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  text-align: center;
+}
+.options{
+  padding-left: 40rpx;
+}
+.select{
+  display: inline-block;
+  padding: 0 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  background:#dddddd;
+  color: #666666;
+  font-size: 28rpx;
+  border-radius: 36rpx;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+}
+.radio{
+  transform:scale(0.7);
+}
+.radio-name{
+  font-size: 28rpx;
+  color: #aeaeae;
+  margin-top: 8rpx;
+}
+radio .wx-radio-input{
+  border-radius: 50%;
+  width: 28rpx;
+  height: 28rpx;
+}
+
+/* 选中后的样式 （可根据设计稿需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+  border-radius: 50%;
+  width: 44rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  text-align: center;
+  font-size: 28rpx; /* 对勾大小 26rpx */
+  color:#fff; /* 对勾颜色 */
+  background: #ABDA72;
+  border-color: #ABDA72;
+}

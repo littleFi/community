@@ -1,0 +1,88 @@
+page{
+  background: #fdfdfd;
+}
+
+.container{
+  padding: 40rpx;
+  position: relative;
+}
+.column{
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.font24{
+  font-size: 24rpx;
+}
+.font28{
+  font-size: 28rpx;
+}
+.font32{
+  font-size: 32rpx;
+}
+.dynamic-list{
+  margin-bottom: 40rpx;
+}
+.people-cont{
+  justify-content: space-between;
+}
+.people-head{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.people-desc{
+  margin-left: 40rpx;
+}
+.name{
+  margin-top: 20rpx;
+}
+.time{
+  font-size: 28rpx;
+  color: #999999;
+}
+.images{
+  margin-top: 20rpx;
+  flex-wrap: wrap;
+}
+.cont{
+  margin-top: 20rpx;
+}
+.cont-image{
+  width:210rpx;
+  height:210rpx;
+  margin-right:13rpx;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+}
+.dynamic-op{
+  margin-top: 40rpx;
+  padding-bottom: 40rpx;
+  border-bottom:2rpx solid #f4f4f4;
+}
+.dynamic-icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+.op-item{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.icon-font{
+  padding-left: 10rpx;
+  color: #666666;
+}
+.publish-btn{
+  position: fixed;
+  z-index: 99;
+  bottom: 50rpx;
+  right: 50rpx;
+  width:100rpx;
+  height:100rpx;
+}
+.number{
+}

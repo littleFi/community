@@ -1,0 +1,37 @@
+page{
+  background: #FFFFFF;
+}
+
+.column{
+  flex-direction: column;
+}
+.row{
+  flex-direction: row;
+}
+
+.container{
+  padding: 40rpx;
+}
+.list{
+  width: 300rpx;
+  box-shadow: #ddd 0rpx 0rpx 6rpx;
+  justify-content: center;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+  margin-bottom: 40rpx;
+}
+.container-list{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.corp-image{
+  width: 300rpx;
+  height: 240rpx;
+}
+.name{
+  font-size: 30rpx;
+  padding: 10rpx 0;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}

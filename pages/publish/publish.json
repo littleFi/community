@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#ABDA72",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "发表动态",
+  "backgroundColor": "#f7f7f7",
+  "backgroundTextStyle": "light"
+}

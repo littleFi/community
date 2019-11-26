@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/index/index",
+    "pages/content/content",
+    "pages/people/people",
+    "pages/mine/mine",
+    "pages/dynamic/dynamic",
+    "pages/detail/detail",
+    "pages/center/center",
+    "pages/community/community",
+    "pages/publish/publish",
+    "pages/corporation/corporation"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#7c68ee",
+    "navigationBarTitleText": "智能社区",
+    "navigationBarTextStyle":"#ffffff"
+  },
+  "tabBar":{
+    "color":"#cccccc",
+    "selectedColor":"#000000",
+    "backgroundColor":"#ffffff",
+    "borderStyle": "black",
+    "list":[
+      {
+        "selectedIconPath":"images/home/home-active.png",
+        "iconPath":"images/home/home.png",
+        "pagePath":"pages/home/home",
+        "text":"首页"
+      },
+      {
+        "selectedIconPath":"images/home/community-active.png",
+        "iconPath":"images/home/community.png",
+        "pagePath":"pages/dynamic/dynamic",
+        "text":"动态"
+      },
+      {
+        "selectedIconPath":"images/home/mine-active.png",
+        "iconPath":"images/home/mine.png",
+        "pagePath":"pages/people/people",
+        "text":"我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,474 @@
+page{
+  background: #f7f7f7;
+  padding-bottom: 200rpx;
+}
+
+.message-content{
+  width: 100%;
+  height: 800rpx;
+  //background-image: url("https://wxmeat.mideav.com/static/bg.png");
+  //background-repeat: no-repeat;
+  background: #7c68ee;
+  background-size: 100% 100%;
+  padding: 20rpx;
+  flex-direction: column;
+  position: relative;
+}
+
+.swiper_container{
+  height: 100%
+}
+.person-content{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 160rpx;
+  align-items: center;
+  padding-top: 30rpx;
+}
+.person-left{
+  flex-direction: row;
+}
+.person-head{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+.name-content{
+  margin-left: 30rpx;
+  flex-direction: column;
+}
+.main-name{
+  display: block;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #ffffff
+}
+.person-tip{
+  display: block;
+  color: #ffffff;
+  font-size: 28rpx;
+  margin-top: 50rpx;
+}
+.person-right{
+  background-color: #ffffff;
+  padding: 0 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 90rpx;
+}
+.follow-icon{
+  width: 50rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+}
+.follow-font{
+  color: #4e5ff7;
+  font-size: 32rpx;
+  padding-left: 10rpx;
+  font-weight: 500;
+}
+.message-container{
+  background: #ffffff;
+  width: 100%;
+  height: 500rpx;
+  margin-top: 30rpx;
+  flex-direction: column;
+  position: relative;
+}
+.message-title{
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.left-icon{
+  height: 20rpx;
+  border-left: 6rpx solid #4c5ff9;
+  margin-top: 20rpx;
+}
+.right-cont{
+  margin-right: 20rpx;
+}
+.right-icon{
+  width: 20rpx;
+  height: 30rpx;
+  margin-top: 15rpx;
+}
+.title{
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  color: #4e5ff7;
+  font-weight: 500;
+}
+.all{
+  font-size: 32rpx;
+  color: #4c5ff9;
+  margin-right: 20rpx;
+}
+
+.message-main{
+  width: calc(100% - 120rpx);
+  height: 300rpx;
+  margin: 20rpx;
+  background-image: url("https://wxmeat.mideav.com/static/message_bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0 40rpx;
+  flex-direction: column;
+}
+.message-list{
+  width:470rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background: #ffffff;
+  flex-direction: row;
+  margin-top: 40rpx;
+  border-radius: 70rpx;
+}
+.message-headImg{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.message-font{
+  font-size: 32rpx;
+  color: #4c4c4c;
+  width: 400rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.set-message{
+  width: calc(100% - 40rpx);
+  margin: 0 20rpx 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #ffffff;
+}
+.head-img-x2{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.message-input{
+  width: calc(100% - 140rpx);
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #f3f3f3;
+  border:2rpx solid #dedede;
+  margin-left: 20rpx;
+  border-radius: 5rpx;
+  padding-left: 10rpx;
+}
+.placeholder{
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #7d7d7d;
+}
+
+.person-all{
+  position: absolute;
+  width: calc(100vw - 40rpx);
+  height: 140rpx;
+  left: 20rpx;
+  bottom: -80rpx;
+  z-index: 99;
+  background: #ffffff;
+  border-radius: 10rpx;
+  flex-direction: row;
+}
+.info-list{
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.info-list .active{
+  color: #476cfb;
+  font-size: 36rpx;
+  font-weight: 500;
+  line-height:60rpx;
+}
+.info-list .active-num{
+  color: #4c6afc;
+  font-size: 32rpx;
+}
+.info-title{
+  color: #222222;
+  font-size: 36rpx;
+  font-weight: 500;
+  line-height:60rpx;
+}
+.info-num{
+  color: #bfc0c4;
+  font-size: 32rpx;
+}
+.info-list text{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.news-content{
+  margin-top: 90rpx;
+  padding-bottom: 20rpx;
+  flex-direction:column;
+}
+.news-title-cont{
+  width:100%;
+  flex-direction:row;
+  justify-content:space-between;
+  height:70rpx;
+  line-height:70rpx;
+}
+.news-title{
+  margin-left: 20rpx;
+  font-size: 36rpx;
+  margin-top:4rpx;
+}
+.news-icon{
+  height: 20rpx;
+  border-left: 6rpx solid #4c5ff9;
+  margin-top: 30rpx;
+}
+.sort{
+  margin-right: 20rpx;
+  font-size: 32rpx;
+  color: #9f9f9f;
+}
+.sort-icon{
+  width:50rpx;
+  height:32rpx;
+  margin-top:20rpx;
+}
+.news-list{
+  padding: 0 20rpx;
+  flex-direction: column;
+}
+
+.news-list .list{
+  width: calc(100%- 40rpx);
+  height: 260rpx;
+  background: #ffffff;
+  border-radius: 10rpx;
+  box-shadow: #f1f1f1 0rpx 0rpx 10rpx;
+  flex-direction: column;
+  padding: 20rpx;
+  margin-top: 40rpx;
+}
+.news-image{
+  width: 300rpx;
+  height: 200rpx;
+}
+.news-info{
+  margin-left: 20rpx;
+}
+.news-title{
+  color: #222222;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.news-author{
+  margin-top: 40rpx;
+  justify-content: space-between;
+  color: #a2a3a8;
+  align-items: center;
+}
+.author,.time{
+  font-size: 28rpx;
+}
+.time{
+  margin-left: 20rpx;
+}
+.comment-icon{
+  width:50rpx;
+  height:50rpx;
+  margin-left:50rpx;
+}
+
+.icon-content{
+  position: relative;
+}
+.icon-num{
+  position: absolute;
+  top:0;
+  right:-10rpx;
+  background:#fe3a3b;
+  color:#ffffff;
+  border-radius:28rpx;
+  font-size:18rpx;
+  padding:0 4rpx;
+}
+
+.share-content{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 100vw;
+  height: 120rpx;
+  line-height: 120rpx;
+  background: #ffffff;
+  border-top: 2rpx solid #f2f2f2;
+  justify-content: flex-end;
+}
+.share-btn{
+  width:240rpx;
+  height:80rpx;
+  line-height:60rpx;
+  background:-webkit-linear-gradient(left,#9065f2,#4276fd);
+  background:linear-gradient(left,#9065f2,#4276fd);
+  border-radius:60rpx;
+  margin-top:20rpx;
+  margin-right:40rpx;
+  justify-content:center;
+}
+.share-icon{
+  width:40rpx;
+  height:40rpx;
+  margin-top:20rpx;
+  margin-left:40rpx;
+
+}
+.share-font{
+  color:#ffffff;
+  font-size:36rpx;
+  background-color:transparent;
+  border:none;
+  margin-left:5rpx;
+  margin-top:-2rpx;
+}
+
+/**
+弹出框
+ */
+.dialog{
+  position: fixed;
+  width: 500rpx;
+  height: 560rpx;
+  left: 50%;
+  top: 50%;
+  margin-left: -250rpx;
+  margin-top: -280rpx;
+  z-index: 9999;
+  background: #ffffff;
+  border-radius: 20rpx;
+  flex-direction: column;
+}
+
+.dialog-bg{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: #222222;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  z-index: 9998;
+}
+.head-bg{
+  width: 100%;
+  height: 160rpx;
+  background-image: url("https://wxmeat.mideav.com/static/head-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  line-height: 160rpx;
+  justify-content: center;
+}
+.complaint{
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 36rpx;
+  text-align: center;
+}
+.input-cont{
+  background: #f7f7f7;
+  width: calc(100% - 80rpx);
+  margin: 20rpx;
+  height: 200rpx;
+  padding: 20rpx;
+  border-radius: 20rpx;
+}
+.complaint-placeholder{
+  font-size: 28rpx;
+  color: #999999;
+}
+.btn-content{
+  flex-direction: row;
+  margin-top: 40rpx;
+}
+.textarea{
+  width: 100%;
+  height: 100%;
+}
+.btn{
+  width: calc(50% - 10rpx);
+}
+.com-bg{
+  background: url("https://wxmeat.mideav.com/static/comment-bg.png") no-repeat;
+  background-size: 100% 100%;
+  height: 80rpx;
+  color: #ffffff;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 70rpx;
+  justify-content: center;
+}
+.cancel-bg{
+  background:#f7f7f7;
+  border-radius: 70rpx;
+  height: 70rpx;
+  margin-left: 10rpx;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #999999;
+  font-size: 28rpx;
+}
+
+
+/**登录授权**/
+.auth{
+  width: 600rpx;
+  height: 400rpx;
+  position: fixed;
+  z-index: 99999;
+  background: #ffffff;
+  border-radius: 20rpx;
+  left: 50%;
+  top: 50%;
+  margin-top: -200rpx;
+  margin-left: -300rpx;
+  text-align: center;
+  flex-direction: column;
+}
+
+.color{
+  color: #2165cd;
+}
+.auth-title{
+  font-weight: 600;
+  padding: 20rpx 0 40rpx;
+  font-size: 46rpx;
+}
+.auth-desc{
+  font-weight: 600;
+  font-size: 32rpx;
+}
+.auth-btn{
+  background: #ffab0e;
+  color: #ffffff;
+  margin-top: 40rpx;
+  padding: 10rpx 150rpx;
+  border-radius: 50rpx;
+}
+.auth text{
+  display: block;
+}
+.new-main{
+  justify-content: flex-start;
+  height:200rpx
+}
