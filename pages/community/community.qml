@@ -19,7 +19,7 @@
 
     <view class="rank column">
         <!--{{item.rank == 1 ? 'first':'' || item.rank == 2 ? 'second':'' || item.rank == 3 ? 'third':'' || item.rank > 3 ? 'normal':''}}-->
-        <view class="list row normal" qq:for="{{rank}}" qq:for-index="idx">
+        <view class="list row normal" bindtap="goToIndex" data-index="{{idx}}" qq:for="{{rank}}" qq:key="{{idx}}" qq:for-index="idx">
             <view class="prize-cont row">
                 <!--<image src="../../images/home/prize1.png" class="prize-icon" qq:if="{{item.rank == 1}}"></image>-->
                 <!--<image src="../../images/home/prize2.png" class="prize-icon" qq:if="{{item.rank == 2}}"></image>-->
@@ -29,11 +29,11 @@
                 <view class="column">
                     <span class="community-name">{{item.name}}</span>
                     <view class="tags row">
-                        <span class="tag" qq:for="{{item.corpLabels}}" qq:for-item="value" style="color:#222222;background: {{ value.color}}" qq:for-index="index">{{value.content}}</span>
+                        <span class="tag" qq:for="{{item.corpLabels}}" qq:key="{{index}}" qq:for-item="value" style="color:#222222;background: {{ value.color}}" qq:for-index="index">{{value.content}}</span>
                     </view>
                     <view class="row school-info">
                         <image src="../../images/home/school.png" alt="" class="school-icon"></image>
-                        <span class="school-name">{{item.schoolName}}</span>
+                        <span class="school-name">{{item.schoolName || '暂无学校'}}</span>
                     </view>
                 </view>
             </view>

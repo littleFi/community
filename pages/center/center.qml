@@ -26,11 +26,11 @@
     </view>
 
     <view class="community-list column">
-        <view class="community row" bindtap="goToIndex" data-index="{{index}}" qq:for="{{community}}">
+        <view class="community row" bindtap="goToIndex" qq:key="{{index}}" data-index="{{index}}" qq:for="{{community}}">
             <view class="detail column">
                 <span class="name">{{item.name}}</span>
                 <view class="tags row">
-                    <span class="tag" qq:for="{{item.corpLabels}}" qq:for-item="label" style="background:{{item.color}}" qq:for-index="index">{{label.content}}</span>
+                    <span class="tag" qq:for="{{item.corpLabels}}" qq:key="{{index}}"qq:for-item="label" style="background:{{item.color}}" qq:for-index="index">{{label.content}}</span>
                 </view>
             </view>
 

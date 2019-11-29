@@ -18,16 +18,21 @@ Page({
     corporationInfo:null,
     messageList:null,
     corpId:5,
-    height:null
+    height:null,
+    headImg:'',
+    content:''
   },
 
   onLoad: function (options) {
     let id = options.id || 5
     let corporation = qq.getStorageSync("community");
     let headImg = qq.getStorageSync("headImg");
-    console.log(headImg)
+    let name = "社团首页"
+    if(corporation){
+        name = corporation.name
+    }
     qq.setNavigationBarTitle({
-        title: corporation.name
+        title: name
     })
     this.setData({
         corpId:id,
@@ -92,6 +97,7 @@ Page({
   },
   //写留言
   writeMessage(e) {
+      let self = this
       let value = e.detail.value
       let corpId = this.data.corpId
       let params = {
@@ -102,6 +108,10 @@ Page({
           method: "POST"
       }
       writeMessage(params).then( res => {
+          tip.toast("留言成功")
+          self.setData({
+              content:''
+          })
       },err =>{
           console.log("请求错误")
       })

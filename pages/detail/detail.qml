@@ -13,7 +13,7 @@
         <view class="dynamic-cont column">
             <text qq:if="{{detail.content}}">{{detail.content}}</text>
             <view class="row images">
-                <image src="{{item}}" class="cont-image" qq:for="{{detail.imgUrl}}" qq:key="{{index}}" qq:if="{{item}}"></image>
+                <image mode="center" catchtap="preview" data-id="{{index}}" src="{{item}}" class="cont-image" qq:for="{{detail.imgUrl}}" qq:key="{{index}}" qq:if="{{item}}"></image>
             </view>
         </view>
         <view class="dynamic-op row">
@@ -22,11 +22,17 @@
                 <text class="icon-font">分享</text>
             </view>
             <view class="op-item" bindtap="comment">
-                <image src="../../images/dynamic/reply.png" class="dynamic-icon"></image>
+                <view class="number-container">
+                    <image src="../../images/dynamic/reply.png" class="dynamic-icon"></image>
+                    <text class="number" qq:if="{{ detail.commentCount > 0}}">{{detail.commentCount}}</text>
+                </view>
                 <text class="icon-font">评论</text>
             </view>
             <view class="op-item" bindtap="praise">
-                <image src="../../images/dynamic/like.png" class="dynamic-icon"></image>
+                <view class="number-container">
+                    <image src="../../images/dynamic/like.png" class="dynamic-icon"></image>
+                    <text class="number" qq:if="{{ detail.praiseCount > 0}}">{{detail.praiseCount}}</text>
+                </view>
                 <text class="icon-font">点赞</text>
             </view>
         </view>
@@ -57,9 +63,9 @@
                 </view>
 
                 <view class="second-reply column">
-                    <view class="second-cont" qq:for="{{item.secondComment}}" qq:for-item="value">
-                        <image src="{{value.userHeadUrl}}" class="second-headimg"></image>
-                        <text class="second-nick">{{value.userNickName}}回复：</text>
+                    <view class="second-cont" qq:for="{{item.secondComment}}" qq:for-index="idx" data-index="{{idx}}" qq:for-item="value" catchtap="replySecond" data-id="{{index}}">
+                        <image src="{{value.secondUserHeadUrl}}" class="second-headimg"></image>
+                        <text class="second-nick">{{value.secondUserNickName}}回复{{value.userNickName}}：</text>
                         <text class="second-font">{{value.content}}</text>
                     </view>
                 </view>
@@ -68,10 +74,10 @@
     </view>
 
     <view class="comment-fixed" qq:if="{{isComment}}">
-        <input type="text" confirm-type="done" bindconfirm="writeComment" class="message-input" placeholder="请写入评论内容" placeholder-class="placeholder" />
+        <input type="text" value="{{content}}" confirm-type="done" bindconfirm="writeComment" class="message-input" placeholder="请写入评论内容" placeholder-class="placeholder" />
     </view>
 
     <view class="comment-fixed" qq:if="{{isReply}}">
-        <input type="text" confirm-type="done" bindconfirm="writeReply" class="message-input" placeholder="请写入回复内容" placeholder-class="placeholder" />
+        <input type="text" value="{{secondContent}}" confirm-type="done" bindconfirm="writeReply" class="message-input" placeholder="请写入回复内容" placeholder-class="placeholder" />
     </view>
 </view>

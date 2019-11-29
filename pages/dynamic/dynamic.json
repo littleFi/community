@@ -4,5 +4,6 @@
   "navigationBarTextStyle": "white",
   "navigationBarTitleText": "动态",
   "backgroundColor": "#f7f7f7",
-  "backgroundTextStyle": "light"
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh":true
 }

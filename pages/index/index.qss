@@ -142,20 +142,20 @@ page{
 }
 .set-message{
   width: calc(100% - 40rpx);
-  margin: 0 20rpx 30rpx;
+  margin: 0 20rpx 10rpx;
   height: 100rpx;
   line-height: 100rpx;
   background: #ffffff;
 }
 .head-img-x2{
-  width: 100rpx;
-  height: 100rpx;
+  width: 80rpx;
+  height: 80rpx;
   border-radius: 50%;
 }
 .message-input{
   width: calc(100% - 140rpx);
-  height: 100rpx;
-  line-height: 100rpx;
+  height: 80rpx;
+  line-height: 80rpx;
   background: #f3f3f3;
   border:2rpx solid #dedede;
   margin-left: 20rpx;
@@ -283,8 +283,8 @@ page{
   margin-left: 20rpx;
 }
 .comment-icon{
-  width:50rpx;
-  height:50rpx;
+  width:40rpx;
+  height:40rpx;
   margin-left:50rpx;
 }
 

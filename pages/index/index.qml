@@ -44,7 +44,7 @@
 
             <view class="set-message">
                 <image src="{{headImg}}" class="head-img-x2"></image>
-                <input type="text" confirm-type="done" bindconfirm="writeMessage" class="message-input" placeholder="我也要留言..." placeholder-class="placeholder" />
+                <input type="text" value="{{content}}" confirm-type="done" bindconfirm="writeMessage" class="message-input" placeholder="我也要留言..." placeholder-class="placeholder" />
             </view>
         </view>
 
@@ -87,7 +87,7 @@
         <view class="list" qq:for="{{articles}}" qq:key="{{index}}" bindtap="detail" data-id="{{item.id}}">
             <view class="">
                 <!--../../images/news-image.jpg-->
-                <image src="{{item.imgUrl}}" class="news-image"></image>
+                <image mode="center" src="{{item.imgUrl}}" class="news-image"></image>
                 <view class="news-info">
                     <text class="news-title">{{item.title}}</text>
                 </view>

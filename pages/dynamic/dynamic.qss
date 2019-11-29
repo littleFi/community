@@ -70,7 +70,6 @@ page{
   flex: 1;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .icon-font{
   padding-left: 10rpx;
@@ -84,5 +83,17 @@ page{
   width:100rpx;
   height:100rpx;
 }
+.number-container{
+  position: relative;
+}
 .number{
+  position:absolute;
+  right:-8rpx;
+  top:-6rpx;
+  font-size:20rpx;
+  background:#fe3a3b;
+  color:#ffffff;
+  border-radius:13px;
+  padding:0 6rpx;
+  height:26rpx
 }

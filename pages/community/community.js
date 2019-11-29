@@ -25,6 +25,14 @@ Page({
         this.loadRank()
     },
 
+    goToIndex: function (e) {
+        let index = e.currentTarget.dataset.index
+        let id = this.data.rank[index].id
+        qq.setStorageSync("community",this.data.rank[index])
+        qq.navigateTo({
+            url: '../index/index?id=' + id
+        })
+    },
     //获取排名
     loadRank: function () {
         let self = this
@@ -58,7 +66,7 @@ Page({
         let curDate = new Date();
         let nextDate = new Date(curDate.getTime() + 24*60*60*1000)
 
-        let startTime = nextDate.getFullYear() + "-" + ((nextDate.getMonth() + 1) < 10 ? "0" + (nextDate.getMonth() + 1):(nextDate.getMonth() + 1))+ "-" + (nextDate.getDate() < 10 ? "0" + nextDate.getDate():nextDate.getDate());
+        let startTime = nextDate.getFullYear() + "/" + ((nextDate.getMonth() + 1) < 10 ? "0" + (nextDate.getMonth() + 1):(nextDate.getMonth() + 1))+ "/" + (nextDate.getDate() < 10 ? "0" + nextDate.getDate():nextDate.getDate());
         let newDate = new Date(startTime + " 00:00:00");
         let endTime = newDate.getTime()
         let nowTime = curDate.getTime()

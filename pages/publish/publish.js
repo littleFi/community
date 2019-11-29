@@ -74,7 +74,13 @@ Page({
         }
         if(checked){
             let keys = Object.keys(people.userinfoExWithCorp.mapManage)
-            let index = keys.indexOf(corp.id)
+            let index = -1
+            for (let i =0;i<keys.length;i++){
+                if(i == corp.id){
+                    index = i
+                }
+            }
+            // let index = keys.indexOf(corp.id)
             if(index < 0){
                 tip.toast("暂无发表官方动态的权限")
                 return

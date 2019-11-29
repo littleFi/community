@@ -3,15 +3,15 @@
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
-		"postcss": true,
-		"minified": true,
+		"postcss": false,
+		"minified": false,
 		"newFeature": true,
 		"autoAudits": false,
 		"remoteDebugLogEnable": false,
-		"uploadWithSourceMap": true,
+		"uploadWithSourceMap": false,
 		"useAlphaLib": true,
-		"nodeModules": true,
-		"uglifyFileName": true
+		"nodeModules": false,
+		"uglifyFileName": false
 	},
 	"qqLibVersion": "1.8.0",
 	"compileType": "miniprogram",

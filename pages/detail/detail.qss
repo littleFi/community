@@ -73,8 +73,8 @@ page{
   align-items: center;
 }
 .dynamic-icon{
-  width: 30rpx;
-  height: 30rpx;
+  width: 40rpx;
+  height: 40rpx;
 }
 
 .comment-people{
@@ -180,4 +180,18 @@ page{
 .second-font{
   font-size: 28rpx;
   color: #999;
+}
+.number-container{
+  position: relative;
+}
+.number{
+  position:absolute;
+  right:-8rpx;
+  top:-6rpx;
+  font-size:20rpx;
+  background:#fe3a3b;
+  color:#ffffff;
+  border-radius:13px;
+  padding:0 6rpx;
+  height:26rpx
 }
